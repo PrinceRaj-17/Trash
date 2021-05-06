@@ -35,7 +35,7 @@ firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
     });
 
 
-    function logOut(){
+    function signedOut(){
         firebase.auth().signOut().then(() => {
             // Sign-out successful.
             window.location.replace("index.html");
